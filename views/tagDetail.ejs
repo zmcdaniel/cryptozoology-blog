@@ -1,0 +1,13 @@
+<div>
+  <h2>Tag Name</h2>
+
+  <ul>
+  <% tag.articles.forEach( function(article) { %>
+    <li>
+      <a href='/article/<%= article.id %>'>
+        <%= article.title %>
+      </a>
+    </li>
+  <% }) %>
+  </ul>
+</div>

@@ -1,0 +1,37 @@
+<% if(errorMessage) { %>
+  <p class='text-danger'>
+  <%= errorMessage %>
+  </p>
+<% } %>
+
+
+<form method='post' action='/article/new'>
+
+  <!-- Article Title -->
+  <div class='form-group'>
+    <label for='title'>Title:</label>
+    <input type='text' id='title' name='title' class='form-control' placeholder='Title is required'>
+  </div>
+
+  <!-- Author name -->
+  <div class='form-group'>
+    <label for='authorName'>Author:</label>
+    <input type='text' id='authorName' name='authorName' class='form-control' placeholder='Anonymous if left blank'>
+  </div>
+
+  <!-- Article body -->
+  <div class='form-group'>
+    <label for='body'>Body:</label>
+    <textarea id='body' name='body' rows='6' cols='50' class='form-control' placeholder='Body is required'></textarea>
+  </div>
+
+  <!-- Tags -->
+  <div class='form-group'>
+    <label for='tag'>Tag:</label>
+    <input type='text' id='tag' name='tag' class='form-control'>
+  </div>
+
+  <input type='submit' value='Add Article' class='btn btn-success'>
+
+
+</form>

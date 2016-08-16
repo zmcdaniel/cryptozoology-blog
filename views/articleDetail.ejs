@@ -1,0 +1,13 @@
+<div>
+  <h2><%= article.title %></h2>
+  <h3><%= article.authorName %></h3>
+
+  <p>
+    <%= article.body %>
+  </p>
+
+  <strong>Tags:</strong>
+  <% article.tags.forEach(function(tag) { %>
+    <strong>#<%= tag.name %></strong>
+  <% }) %>
+</div>

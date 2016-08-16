@@ -1,0 +1,16 @@
+<div>
+  <h2>All tags</h2>
+
+  <ul>
+
+  <% tags.forEach(function(tag) { %>
+      <li>
+        <a href='/tag/<%= tag.id %>'>
+          <%= tag.name %>
+        </a>
+      </li>
+
+  <% }) %>
+
+  </ul>
+</div>
